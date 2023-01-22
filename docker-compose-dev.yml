@@ -1,0 +1,10 @@
+services:
+  rabbit1:
+    image: bijukunjummen/rabbitmq-server:3.7.0
+    hostname: rabbit1
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=myuser
+      - RABBITMQ_DEFAULT_PASS=mypass
